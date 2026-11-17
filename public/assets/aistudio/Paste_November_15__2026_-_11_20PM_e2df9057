@@ -1,0 +1,1143 @@
+# PROJECT: SAMBHRAM PU COLLEGE – COMPLETE PROFESSIONAL EDUCATIONAL WEBSITE
+
+Act as a senior UI/UX designer, React developer, frontend architect, animation specialist and SEO expert.
+
+I want to develop a complete, modern, premium-quality, professional educational website for **Sambhram PU College**, using React.js.
+
+The website should represent a reputed Pre-University College in Karnataka, India. It should create a strong impression among students and parents, communicate the college's academic values, showcase its educational environment, provide detailed academic and admission information, and make it easy for visitors to contact the institution.
+
+This must be a complete, multi-page educational website, not just a homepage or static landing page.
+
+The website should have:
+- Premium UI/UX design.
+- Modern educational branding.
+- Fully responsive layouts.
+- Smooth animations and interactions.
+- Complete navigation and dropdowns.
+- Dedicated pages for all sections.
+- Professional images and visual storytelling.
+- SEO-friendly page architecture.
+- Reusable React components.
+- Future backend and admin panel integration readiness.
+
+Do not create a generic school website template. Build a distinctive, sophisticated educational website with excellent visual hierarchy, thoughtful layouts, elegant typography, professional photography and consistent design throughout.
+
+==================================================
+1. TECHNOLOGY STACK AND REQUIRED LIBRARIES
+==================================================
+
+Use the following technologies and libraries.
+
+| Requirement | Library |
+|---|---|
+| Frontend Framework | React.js + Vite |
+| Programming Language | JavaScript (ES6+) |
+| Styling | Tailwind CSS |
+| Routing | React Router DOM |
+| Icons | Lucide React |
+| General Animations | Motion (motion/react) |
+| Advanced Scroll Animations | GSAP + ScrollTrigger |
+| Animated Illustrations | Lottie |
+| Smooth Scrolling | Lenis |
+| 3D Animations | React Three Fiber + Three.js |
+| UI Components | shadcn/ui |
+| SEO | React Helmet Async |
+| Form Handling | React Hook Form |
+| Form Validation | Zod |
+| Notifications | Sonner |
+| Carousel / Slider | Swiper.js |
+| Utility Styling | clsx + tailwind-merge |
+
+LIBRARY IMPLEMENTATION GUIDELINES:
+
+A. Lucide React
+- Use Lucide React consistently for icons.
+- Use appropriate icons for navigation, academics, courses, facilities, admissions and contact information.
+- Maintain consistent icon sizes and stroke widths.
+- Avoid mixing different icon libraries.
+
+B. Motion (motion/react)
+- Use for general interface animations.
+- Animate page transitions.
+- Add subtle entrance animations to sections.
+- Animate buttons, cards, dropdowns and navigation.
+- Add smooth hover and tap interactions.
+
+C. GSAP + ScrollTrigger
+- Use for advanced scroll-based animations.
+- Implement selected parallax effects.
+- Use sophisticated image and text reveals.
+- Create scroll-triggered section transitions where appropriate.
+- Properly clean up animations and ScrollTriggers on component unmount.
+
+D. Lottie
+- Use for selected animated illustrations.
+- Suitable for admission processes, student activities and educational highlights.
+- Keep animations lightweight.
+- Avoid excessive decorative animations.
+
+E. Lenis
+- Implement smooth page scrolling.
+- Integrate correctly with GSAP ScrollTrigger.
+- Ensure compatibility with anchor links and React Router.
+- Respect reduced-motion preferences.
+- Avoid conflicts with browser scrolling.
+
+F. React Three Fiber + Three.js
+- Use only when 3D adds meaningful visual value.
+- Suitable for an optional 3D hero visual or subtle educational illustration.
+- Lazy-load 3D components.
+- Optimize performance.
+- Provide static fallbacks for mobile and low-powered devices.
+- Do not add unnecessary 3D effects to every page.
+
+G. shadcn/ui
+Use shadcn/ui for:
+- Dropdown menus.
+- Dialogs and modals.
+- Accordions.
+- Tabs.
+- Select menus.
+- Buttons.
+- Form components.
+- Tooltips.
+- Navigation menus.
+- Mobile navigation sheets.
+
+Customize the components to match the Sambhram PU College design system.
+
+ANIMATION RULES:
+- Motion for regular UI animations.
+- GSAP for advanced scroll animations.
+- Lottie for standalone illustrations.
+- React Three Fiber for selected 3D elements.
+- Lenis for smooth scrolling.
+- Do not use multiple animation libraries for the same animation.
+- Avoid unnecessary animation complexity.
+- Prioritize performance and accessibility.
+- Respect prefers-reduced-motion.
+
+==================================================
+2. BRAND IDENTITY AND DESIGN SYSTEM
+==================================================
+
+College Name: Sambhram PU College.
+
+Design direction:
+- Premium educational institution.
+- Modern and professional.
+- Elegant and trustworthy.
+- Student-focused.
+- Parent-friendly.
+- Academic and sophisticated.
+
+Suggested color palette:
+
+Primary Navy Blue: #173B67
+Secondary Blue: #244F7C
+Gold Accent: #D5A746
+Background: #F7F9FC
+White: #FFFFFF
+Main Text: #1C2735
+Muted Text: #68778A
+
+Typography:
+- Poppins for headings.
+- Inter for body text.
+
+Design requirements:
+- Strong visual hierarchy.
+- Generous whitespace.
+- Professional typography.
+- Premium image layouts.
+- Elegant cards.
+- Subtle shadows.
+- Consistent border radius.
+- Clean section transitions.
+- Smooth hover interactions.
+- Clear call-to-action buttons.
+- Consistent spacing system.
+- Responsive layouts.
+
+Do not overuse:
+- Gradients.
+- Glassmorphism.
+- Large rounded cards.
+- Excessive animations.
+- Decorative icons.
+- Unnecessary text.
+- Repetitive section designs.
+
+Use real-looking educational photography and meaningful visual content.
+
+==================================================
+3. HEADER AND NAVIGATION
+==================================================
+
+Create a modern, responsive navigation bar.
+
+LEFT SIDE:
+- College logo.
+- Sambhram PU College name.
+
+RIGHT SIDE NAVIGATION:
+
+1. Home
+2. About Us
+3. Academics
+4. Admission
+5. Sambhram's Corner
+6. Media
+7. Contact Us
+
+DROPDOWN STRUCTURE:
+
+ABOUT US:
+- Message
+  - Founder's Message
+  - Principal's Message
+- About College
+- Motto & Crest
+- Vision & Mission
+- Management
+- Faculty & Staff
+
+ACADEMICS:
+- Courses
+  - First Year PU
+  - Second Year PU
+
+ADMISSION:
+- Eligibility and Norms
+  - First Year PU Eligibility
+  - Second Year PU Eligibility
+
+SAMBHRAM'S CORNER:
+- Guidelines
+- Attendance Monitoring
+- Rules & Regulations
+- Library
+
+MEDIA:
+- Gallery
+- Blogs
+- Videos
+
+NAVIGATION FUNCTIONALITY:
+- Desktop dropdown menus.
+- Click-to-expand mobile dropdowns.
+- Sticky header.
+- Active page indication.
+- Smooth navigation.
+- Mobile hamburger menu.
+- Keyboard-accessible navigation.
+- Close mobile menu after selecting a link.
+- Proper dropdown positioning.
+- Responsive navigation at all screen sizes.
+
+Add a highlighted Admission Enquiry button in the navbar.
+
+==================================================
+4. HOME PAGE
+==================================================
+
+Build a visually impressive homepage.
+
+SECTION A: HERO SLIDER / BANNER
+
+Create a full-width premium hero slider.
+
+Requirements:
+- High-quality campus and student photographs.
+- Professional dark overlay.
+- Large heading.
+- Supporting description.
+- Primary CTA: Explore Courses.
+- Secondary CTA: Admission Enquiry.
+- Three slides with different messages.
+- Automatic sliding.
+- Previous and next arrows.
+- Pagination indicators.
+- Smooth slide transitions.
+- Responsive image positioning.
+
+Suggested messages:
+1. Building Bright Futures Through Quality Education.
+2. Learn Today. Lead Tomorrow.
+3. Empowering Students Through Knowledge and Excellence.
+
+Use Swiper.js.
+
+SECTION B: WELCOME TO SAMBHRAM PU COLLEGE
+
+Include:
+- College introduction.
+- College photograph.
+- Short description.
+- Read More button.
+- Link to About College.
+
+Use an elegant split layout with image and text.
+
+SECTION C: PROGRAMS OFFERED
+
+Display the available PU programs.
+
+Possible streams:
+- Science.
+- Commerce.
+- Arts, if offered.
+
+Each program card should contain:
+- Stream name.
+- Relevant image or icon.
+- Short description.
+- Available subject combinations.
+- Learn More button.
+
+Do not assume all subject combinations are offered. Keep the data editable.
+
+SECTION D: WHY CHOOSE SAMBHRAM?
+
+Create a section highlighting educational strengths.
+
+Suggested categories:
+- Experienced Faculty.
+- Student-Centric Learning.
+- Academic Excellence.
+- Practical Learning.
+- Modern Infrastructure.
+- Holistic Development.
+
+Treat these as editable content, not verified achievements.
+
+SECTION E: LIFE AT SAMBHRAM PU COLLEGE
+
+Showcase student life.
+
+Include:
+- Academic activities.
+- Cultural programs.
+- Sports.
+- Student clubs.
+- Workshops.
+- Competitions.
+- Celebrations.
+- Educational activities.
+
+Use image-led layouts, asymmetric grids and attractive photography.
+
+SECTION F: COLLEGE HIGHLIGHTS
+
+Display important institutional highlights.
+
+Possible topics:
+- Academic programs.
+- Faculty support.
+- Student development.
+- Learning environment.
+- Campus facilities.
+
+Do not display fabricated statistics, student counts, rankings or placement percentages.
+
+SECTION G: LATEST ANNOUNCEMENTS
+
+Include:
+- Announcement title.
+- Date.
+- Short description.
+- Read More link.
+
+Create sample editable placeholder announcements.
+
+SECTION H: ADMISSION CTA
+
+Create an attractive admission section with:
+- Admission heading.
+- Short description.
+- Apply Now / Enquire Now button.
+- WhatsApp contact option.
+
+SECTION I: CONTACT SECTION
+
+Display:
+- College address.
+- Phone number.
+- Email.
+- Map link.
+- Contact CTA.
+
+SECTION J: FOOTER
+
+Include:
+- College logo.
+- Short college introduction.
+- Quick links.
+- About links.
+- Academic links.
+- Admission links.
+- Contact details.
+- Social media links.
+- Privacy Policy.
+- Terms and Conditions.
+- Copyright information.
+
+==================================================
+5. ABOUT US
+==================================================
+
+Create a main About Us landing page and separate detailed subpages.
+
+A. FOUNDERS' MESSAGE
+
+Include:
+- Founder's photograph.
+- Name.
+- Designation.
+- Welcome message.
+- Educational philosophy.
+- Vision for the institution.
+
+B. PRINCIPAL'S MESSAGE
+
+Include:
+- Principal's photograph.
+- Name.
+- Designation.
+- Professional message.
+- Academic philosophy.
+- Student development approach.
+
+C. ABOUT COLLEGE
+
+Include:
+- College introduction.
+- Background and history.
+- Educational philosophy.
+- Academic approach.
+- Student development.
+- Campus environment.
+
+D. MOTTO & CREST
+
+Include:
+- Official college motto.
+- College crest or emblem.
+- Meaning of logo.
+- Meaning of symbols.
+- Meaning of colors.
+
+Present the crest prominently.
+
+Do not invent official motto or crest information.
+
+E. VISION & MISSION
+
+Display separate Vision and Mission sections.
+
+Vision:
+- Long-term educational aspirations.
+
+Mission:
+- Quality education.
+- Student development.
+- Knowledge and skills.
+- Values and discipline.
+- Responsible citizenship.
+
+Keep the official wording editable.
+
+F. MANAGEMENT
+
+Create professional management profiles.
+
+Each profile:
+- Photograph.
+- Name.
+- Designation.
+- Short biography.
+
+G. FACULTY & STAFF
+
+Create a faculty directory.
+
+Each faculty card:
+- Photograph.
+- Name.
+- Designation.
+- Department.
+- Qualification.
+- Subject specialization.
+
+Add department filters if sufficient faculty records are available.
+
+==================================================
+6. ACADEMICS
+==================================================
+
+Create an Academics landing page.
+
+Separate the information into:
+
+A. FIRST YEAR PU
+
+Include:
+- Introduction.
+- Available streams.
+- Subject combinations.
+- Core subjects.
+- Language subjects.
+- Curriculum overview.
+- Practical subjects where applicable.
+- Learning outcomes.
+- Download syllabus button.
+
+B. SECOND YEAR PU
+
+Include:
+- Introduction.
+- Available streams.
+- Subject combinations.
+- Subject-wise content.
+- Practical examinations where applicable.
+- Board examination preparation.
+- Curriculum overview.
+- Download syllabus button.
+
+Display Science, Commerce and Arts only where offered.
+
+Use tabs or stream selection controls.
+
+Keep all course data separate and editable.
+
+==================================================
+7. ADMISSION
+==================================================
+
+Create a professional admission information section.
+
+A. ADMISSION OVERVIEW
+
+Include:
+- Admission introduction.
+- Admission process.
+- Important dates.
+- Admission enquiry CTA.
+
+B. FIRST YEAR PU ELIGIBILITY
+
+Include:
+- SSLC / Class 10 qualification.
+- Eligibility criteria.
+- Required documents.
+- Admission norms.
+- Application process.
+
+C. SECOND YEAR PU ELIGIBILITY
+
+Include:
+- Eligibility for students completing First PUC.
+- Transfer requirements.
+- Academic documents.
+- Admission norms.
+- Application process.
+
+D. DOCUMENTS REQUIRED
+
+Create an organized list:
+- SSLC marks card.
+- Transfer certificate.
+- Study certificate, where applicable.
+- Passport-size photographs.
+- Accepted identification, where required.
+- Other documents required by the institution.
+
+E. ADMISSION ENQUIRY
+
+Add a prominent enquiry form and WhatsApp contact option.
+
+IMPORTANT:
+Use official Karnataka PU admission regulations for final eligibility details. Do not invent marks requirements, age limits, admission deadlines or legal rules.
+
+==================================================
+8. SAMBHRAM'S CORNER
+==================================================
+
+Create a dedicated student information section that works like a student handbook.
+
+A. GUIDELINES
+
+Include:
+- Academic guidelines.
+- Classroom guidelines.
+- Examination guidelines.
+- Campus conduct.
+- Student responsibilities.
+
+B. ATTENDANCE MONITORING
+
+Include:
+- Attendance policy.
+- Minimum attendance requirements.
+- Attendance monitoring process.
+- Parent communication process.
+- Leave application procedure.
+
+Do not invent official attendance requirements. Keep editable and verify with applicable regulations.
+
+C. RULES & REGULATIONS
+
+Organize into categories:
+- General discipline.
+- Classroom conduct.
+- Uniform and dress code, if applicable.
+- Mobile phone policy.
+- Examination rules.
+- Campus behavior.
+- Student responsibilities.
+
+Use attractive accordion components.
+
+D. LIBRARY
+
+Include:
+- Library introduction.
+- Library timings.
+- Available resources.
+- Book borrowing rules.
+- Return policy.
+- Reading room information.
+- Library discipline.
+
+Use placeholders for official timings and borrowing limits.
+
+==================================================
+9. MEDIA
+==================================================
+
+Create a Media landing page with three sections.
+
+A. GALLERY
+
+Create a responsive image gallery in grid format.
+
+Requirements:
+- Responsive grid.
+- Category filters.
+- Hover effects.
+- Image lightbox.
+- Previous and next navigation.
+- Image captions.
+- Lazy loading.
+- High-quality images.
+
+Categories:
+- Campus.
+- Academic Activities.
+- Cultural Events.
+- Sports.
+- Annual Day.
+- Science Exhibitions.
+- Celebrations.
+- Educational Tours.
+
+B. BLOGS
+
+Display exactly THREE featured blogs on the Media landing page.
+
+Each blog card must have:
+- Featured image.
+- Blog title.
+- Short description.
+- Publication date.
+- Read More button.
+
+Each blog must open on a separate dynamic blog detail page.
+
+BLOG DETAIL PAGE:
+- Large featured image.
+- Blog title.
+- Publication date.
+- Author.
+- Full article content.
+- Related articles.
+- Back to Blogs navigation.
+
+Use dynamic routing:
+ /media/blogs/:slug
+
+Create three sample blog entries with editable content. Do not present fabricated college news as real events.
+
+C. VIDEOS
+
+Create a responsive video gallery using a grid layout.
+
+Requirements:
+- Video thumbnails.
+- Video title.
+- Short description.
+- Video duration, if available.
+- Play button.
+- YouTube video embedding.
+- Modal or embedded playback.
+- Responsive grid.
+
+Do not autoplay videos.
+
+==================================================
+10. CONTACT US
+==================================================
+
+Create a dedicated Contact Us page.
+
+A. COLLEGE INFORMATION
+
+Display:
+- Official college address.
+- Primary phone number.
+- Alternative phone number, if available.
+- Official email.
+- Office working hours.
+
+Use editable placeholders.
+
+B. GOOGLE MAPS / GEOLOCATION
+
+Include:
+- Embedded Google Maps.
+- Get Directions button.
+- Correct college location.
+- Responsive map layout.
+
+Do not guess college coordinates or address.
+
+C. CONTACT FORM
+
+Create a professional contact form with these fields:
+
+1. Name
+   - Required.
+   - Text input.
+
+2. Email
+   - Required.
+   - Email validation.
+
+3. Phone Number
+   - Required.
+   - Indian mobile number validation.
+
+4. Subject
+   - Required.
+   - Select dropdown:
+     - Admission Enquiry
+     - Fee Structure
+     - Others
+
+5. Message
+   - Required.
+   - Multiline textarea.
+
+6. Submit Button.
+
+FUNCTIONALITY:
+- React Hook Form.
+- Zod validation.
+- Clear validation messages.
+- Loading state.
+- Success message.
+- Error message.
+- Prevent duplicate submissions.
+
+Prepare the form for future backend API integration.
+
+Do not claim that messages are sent if no backend or email service is connected.
+
+==================================================
+11. ADDITIONAL WEBSITE FEATURES
+==================================================
+
+Include:
+- Floating WhatsApp button.
+- Back-to-top button.
+- Admission Enquiry CTA.
+- Latest announcements.
+- Download Center for PDF documents.
+- Social media integration.
+- Blog search or category filters.
+- Breadcrumb navigation.
+- Custom 404 page.
+- Loading states.
+- Privacy Policy.
+- Terms and Conditions.
+- FAQ section.
+
+==================================================
+12. SEO IMPLEMENTATION
+==================================================
+
+Implement SEO across every page.
+
+Include:
+- Unique page titles.
+- Unique meta descriptions.
+- Canonical URLs.
+- Open Graph metadata.
+- Twitter card metadata.
+- XML sitemap.
+- Robots.txt.
+- Semantic HTML.
+- Image alt attributes.
+- Breadcrumb structured data.
+- EducationalOrganization structured data where appropriate.
+- Local SEO structure.
+
+Target search intent:
+- Sambhram PU College.
+- PU College in Bangalore.
+- Pre University College in Karnataka.
+
+Use React Helmet Async and ensure metadata is maintained correctly.
+
+==================================================
+13. PERFORMANCE AND ACCESSIBILITY
+==================================================
+
+Implement:
+- Optimized images.
+- WebP and AVIF support.
+- Lazy loading.
+- Responsive image dimensions.
+- Code splitting.
+- Lazy-loaded route components.
+- Minimized bundle size.
+- Fast page rendering.
+- Proper heading hierarchy.
+- Keyboard-accessible menus.
+- Visible focus indicators.
+- Sufficient color contrast.
+- Accessible form labels.
+- Reduced-motion support.
+
+Avoid loading unnecessary 3D assets or large animation files on initial page load.
+
+==================================================
+14. REACT PROJECT STRUCTURE
+==================================================
+
+Organize the project using a clean and scalable structure.
+
+src/
+  assets/
+    images/
+    logos/
+    videos/
+    animations/
+
+  components/
+    Header.jsx
+    Footer.jsx
+    HeroSlider.jsx
+    Dropdown.jsx
+    Breadcrumbs.jsx
+    PageBanner.jsx
+    SectionHeading.jsx
+    ProgramCard.jsx
+    FacultyCard.jsx
+    BlogCard.jsx
+    GalleryGrid.jsx
+    ContactForm.jsx
+    WhatsAppButton.jsx
+    BackToTop.jsx
+    AnnouncementBar.jsx
+
+  layouts/
+    MainLayout.jsx
+
+  pages/
+    Home.jsx
+
+    about/
+      AboutUs.jsx
+      FoundersMessage.jsx
+      PrincipalMessage.jsx
+      AboutCollege.jsx
+      MottoCrest.jsx
+      VisionMission.jsx
+      Management.jsx
+      FacultyStaff.jsx
+
+    academics/
+      Academics.jsx
+      FirstYearPU.jsx
+      SecondYearPU.jsx
+
+    admission/
+      Admission.jsx
+      FirstYearEligibility.jsx
+      SecondYearEligibility.jsx
+
+    sambhrams-corner/
+      Guidelines.jsx
+      AttendanceMonitoring.jsx
+      RulesRegulations.jsx
+      Library.jsx
+
+    media/
+      Media.jsx
+      Gallery.jsx
+      Blogs.jsx
+      BlogDetails.jsx
+      Videos.jsx
+
+    Contact.jsx
+    NotFound.jsx
+    PrivacyPolicy.jsx
+    TermsConditions.jsx
+
+  data/
+    navigation.js
+    programs.js
+    faculty.js
+    gallery.js
+    blogs.js
+    videos.js
+    announcements.js
+    collegeInfo.js
+
+  hooks/
+  utils/
+  styles/
+
+  App.jsx
+  main.jsx
+
+Keep the components modular and reusable.
+
+Do not write the entire website inside App.jsx.
+
+==================================================
+15. ROUTING STRUCTURE
+==================================================
+
+Use React Router DOM.
+
+Create these routes:
+
+HOME:
+/ 
+
+ABOUT US:
+/about
+/about/founders-message
+/about/principal-message
+/about/college
+/about/motto-crest
+/about/vision-mission
+/about/management
+/about/faculty
+
+ACADEMICS:
+/academics
+/academics/first-year-pu
+/academics/second-year-pu
+
+ADMISSION:
+/admission
+/admission/first-year-eligibility
+/admission/second-year-eligibility
+
+SAMBHRAM'S CORNER:
+/sambhrams-corner/guidelines
+/sambhrams-corner/attendance
+/sambhrams-corner/rules-regulations
+/sambhrams-corner/library
+
+MEDIA:
+/media
+/media/gallery
+/media/blogs
+/media/blogs/:slug
+/media/videos
+
+CONTACT:
+/contact
+
+ADDITIONAL:
+/privacy-policy
+/terms-conditions
+
+All routes must work when:
+- Navigating through menus.
+- Refreshing the browser.
+- Opening a URL directly.
+
+Configure appropriate hosting fallback for React Router.
+
+==================================================
+16. CONTENT MANAGEMENT READINESS
+==================================================
+
+Keep all content structured and separate from UI components.
+
+Prepare data structures for:
+- College information.
+- Management.
+- Founder's message.
+- Principal's message.
+- Faculty.
+- Courses.
+- Subject combinations.
+- Admission details.
+- Guidelines.
+- Attendance.
+- Library.
+- Gallery.
+- Blogs.
+- Videos.
+- Announcements.
+- Contact information.
+
+Prepare the website for future Node.js, Express and MySQL integration.
+
+Do not hardcode large content blocks directly inside JSX components.
+
+==================================================
+17. CONTENT ACCURACY RULES
+==================================================
+
+This is an actual college website.
+
+Never invent:
+- Founder's name.
+- Principal's name.
+- Management details.
+- Faculty details.
+- Official college motto.
+- Crest meaning.
+- College achievements.
+- Student statistics.
+- Contact numbers.
+- Email addresses.
+- Official address.
+- Course combinations.
+- Fee structure.
+- Admission eligibility.
+- Attendance rules.
+- Library timings.
+
+If official information is unavailable:
+- Use clearly marked editable placeholder content.
+- Keep it separate in data files.
+- Do not display fake achievements or testimonials.
+- Do not present sample data as actual college information.
+
+==================================================
+18. DEVELOPMENT WORKFLOW
+==================================================
+
+Develop the website systematically.
+
+PHASE 1:
+- Project setup.
+- Install required dependencies.
+- Configure Tailwind CSS.
+- Configure routing.
+- Establish design system.
+- Create header and footer.
+- Build complete homepage.
+
+PHASE 2:
+- About Us pages.
+- Academics pages.
+- Admission pages.
+- Sambhram's Corner pages.
+
+PHASE 3:
+- Media landing page.
+- Gallery.
+- Blogs and individual blog pages.
+- Videos.
+- Contact page.
+
+PHASE 4:
+- Add Motion animations.
+- Add GSAP scroll animations selectively.
+- Configure Lenis.
+- Add Lottie illustrations.
+- Add optional 3D experience.
+- Integrate shadcn/ui components.
+
+PHASE 5:
+- SEO.
+- Performance optimization.
+- Accessibility.
+- Responsive testing.
+- Functional testing.
+
+==================================================
+19. FINAL QUALITY CHECKLIST
+==================================================
+
+Before considering the website complete, verify:
+
+- All navbar links work.
+- All dropdown menus work.
+- Mobile menu works.
+- Every page has its own layout and content.
+- Homepage slider works.
+- All course pages work.
+- All admission pages work.
+- Gallery grid works.
+- Gallery lightbox works.
+- Exactly three featured blog cards appear on the Media landing page.
+- Blog detail pages work using dynamic routing.
+- Videos play correctly.
+- Contact form validation works.
+- WhatsApp button works when configured.
+- All images load correctly.
+- No broken links.
+- No console errors.
+- No horizontal overflow.
+- All pages are responsive.
+- SEO metadata is correct.
+- Browser refresh works on every route.
+- Animations do not affect performance.
+
+==================================================
+20. FINAL EXPECTATION
+==================================================
+
+The final output must be a complete, professional, premium educational website for Sambhram PU College.
+
+It should look like a carefully designed institutional website built by an experienced web development agency.
+
+Focus on:
+1. Exceptional UI/UX.
+2. Premium visual design.
+3. Professional educational branding.
+4. Meaningful animations.
+5. High-quality imagery.
+6. Responsive layouts.
+7. Complete multi-page navigation.
+8. Reusable React architecture.
+9. SEO and performance.
+10. Future backend integration.
+
+IMPORTANT:
+
+Do not stop after generating the homepage.
+
+Do not generate only a visual mockup.
+
+Do not leave important routes empty.
+
+Do not create buttons that have no functionality.
+
+Build the complete working React application.
+
+Start by inspecting the project environment, setting up the required dependencies, and implementing the global design system. Then build the homepage and systematically complete all remaining pages.
+
+If the project becomes too large for one generation, work in manageable phases while preserving the same design system and existing code. Never overwrite working components unnecessarily.
+
+The result must be a fully navigable, responsive and polished Sambhram PU College website.

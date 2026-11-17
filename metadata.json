@@ -1,0 +1,8 @@
+{
+  "name": "Sambhram PU College",
+  "description": "Official educational portal for Sambhram PU College, Karnataka — Pre-University academic streams, DPUE-aligned admissions, student handbook, campus media, and enquiries.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
